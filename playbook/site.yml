@@ -29,6 +29,7 @@
       notify: Start clickhouse service
     - name: Flush handlers
       meta: flush_handlers
+      
     - name: Create database
       ansible.builtin.command: "clickhouse-client -q 'create database logs;'"
       register: create_db
@@ -37,7 +38,8 @@
 
 
 - name: Install Vector
-  hosts: vector
+  hosts: click-srv
+  # hosts: vector
   handlers:
     - name: Start vector service
       become: true
