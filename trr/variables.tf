@@ -1,4 +1,6 @@
-variable count_vm {}
+variable count_vm {
+  default = 0
+}
 
 variable "vm" {
   type = list(
