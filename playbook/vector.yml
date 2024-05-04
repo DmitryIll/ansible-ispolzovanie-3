@@ -1,6 +1,7 @@
 ---
 - name: Install Vector
-  hosts: clickhouse
+  # hosts: clickhouse
+  hosts: click-srv
   handlers:
     - name: Start vector service
       become: true
