@@ -127,7 +127,8 @@
     become: true
     ansible.builtin.yum:
       name:
-        - nginx
+        # - nginx
+        - nano
   
   # - name: Add user vector
   #   user:
