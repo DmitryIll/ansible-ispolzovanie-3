@@ -142,7 +142,7 @@
   - name: clone git repo lighthouse
     git:
       repo: 'https://github.com/VKCOM/lighthouse.git'
-      dest: "/usr/share/nginx/html"
+      dest: "/usr/share/nginx/html/lighthouse/"
       force: yes
     notify: Start nginx service
 
