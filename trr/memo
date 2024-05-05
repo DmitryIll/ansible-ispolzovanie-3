@@ -7,21 +7,21 @@ nano /etc/nginx/conf.d/default.conf
         index  index.html index.htm;
     }
 
- nginx -s reload
+#  nginx -s reload
 
 
-git clone https://github.com/VKCOM/lighthouse.git
+# git clone https://github.com/VKCOM/lighthouse.git
 
-cd /usr/share/nginx/html
-yum install git
+# cd /usr/share/nginx/html
+# yum install git
  cd /usr/share/nginx/html
 cd /etc/nginx/conf.d/
-systemctl start nginx
-systemctl enable nginx
-yum install nginx
+# systemctl start nginx
+# systemctl enable nginx
+# yum install nginx
 
- yum update
- nano /etc/yum.repos.d/nginx.repo
+#  yum update
+#  nano /etc/yum.repos.d/nginx.repo
 
 [nginx]
 name=nginx repo

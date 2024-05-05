@@ -123,7 +123,6 @@
         state: restarted
         enabled: yes
   tasks:
-
   - name: подготовка репозитория nginx
     template:
       src: templates/nginx.repo.j2
