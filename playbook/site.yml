@@ -123,12 +123,19 @@
   #       state: restarted
   #       enabled: yes
   tasks:
+
+  - name: подготовка репозитория nginx
+    template:
+      src: templates/nginx.repo.j2
+      dest: /etc/yum.repos.d/nginx.repo
   - name: install lighthouse
     become: true
     ansible.builtin.yum:
       name:
-        # - nginx
+        - nginx
         - nano
+
+
   
   # - name: Add user vector
   #   user:
