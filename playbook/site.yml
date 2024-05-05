@@ -135,7 +135,8 @@
         - nginx
         - git
         - nano
-      update: yes
+      state: present
+      update_cache: true
     notify: Start nginx service
 
   - name: clone git repo lighthouse
